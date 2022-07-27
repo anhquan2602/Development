@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    Mã màu
+    <input type="color" id="select-color">
+    <br>
+    <br> border góc
+    <input type="range" id="set-border" min="1" max="50">
+    <br>
+    <br> Di chuyển
+    <input type="range" id="move" min="10" max="300">
+    <br>
+    <br> Di chuyển + border góc
+    <input type="range" id="move-border" min="10" max="300">
+    <br>
+    <br> Di chuyển + border góc + màu
+    <input type="range" id="move-border-color" min="10" max="300">
+    <input type="color" id="set-color-2" style="visibility: hidden;">
+    <br>
+    <br>
+
+    <select name="" id="">
+        <option value="">123122</option>
+        <option value="">123122</option>
+        <option value="">123122</option>
+    </select>
+
+    <div id="box"></div>
+
+    <script>
+        let theInput = document.getElementById("select-color");
+        theInput.addEventListener("input", function() {
+            const setcolor = theInput.value;
+            const box = document.getElementById("box");
+            box.style.backgroundColor = setcolor;
+        }, false);
+
+        const theInput2 = document.getElementById("set-border");
+        theInput2.addEventListener("input", function() {
+            const setBorder = theInput2.value;
+            const box = document.getElementById("box");
+            box.style.borderRadius = `${setBorder}%`;
+        }, false);
+
+        const theInput3 = document.getElementById("move");
+        theInput3.addEventListener("input", function() {
+            const move = theInput3.value;
+            const box = document.getElementById("box");
+            box.style.margin = `0 0 0 ${move}px`;
+        }, false);
+
+        const theInput4 = document.getElementById("move-border");
+        theInput4.addEventListener("input", function() {
+            const move2 = theInput4.value;
+            const box = document.getElementById("box");
+            box.style.margin = `0 0 0 ${move2}px`;
+            box.style.borderRadius = `${move2}px`;
+        }, false);
+
+        const theInput5 = document.getElementById("move-border-color");
+        theInput5.addEventListener("input", function() {
+            const move3 = theInput5.value;
+            const box = document.getElementById("box");
+            box.style.margin = `0 0 0 ${move3}px`;
+            box.style.borderRadius = `${move3}px`;
+            let rColor = move3 - 45 < 0 ? 0 : move3 - 45;
+            let gColor = move3 - 45 < 0 ? 0 : Math.floor((move3 - 45) / 2);
+            let bColor = move3 - 45 < 0 ? 0 : Math.floor((move3 - 45) / 4);
+            box.style.background = `rgb(${rColor},${gColor},${bColor})`
+        }, false);
+    </script>
+</body>
+
+</html>

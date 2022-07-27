@@ -1,0 +1,212 @@
+.main .main-left {
+    width: 50%;
+    background-color: #fafafa;
+    z-index: 999;
+}
+
+.story {
+    height: 110px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid rgb(192, 192, 192);
+    overflow: hidden;
+}
+
+.story-icon {
+    display: flex;
+}
+
+.story-icon-detail1 {
+    width: 70px;
+    height: 84px;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.story-circle img {
+    left: 9px;
+    top: 18px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 444;
+    cursor: pointer;
+}
+
+.story-icon1 {
+    left: 20%;
+    top: -57%;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+.story-text {
+    overflow: hidden;
+    font-size: 12px;
+    position: relative;
+    top: -43px;
+    left: 10%;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+}
+
+.post {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.post-header {
+    height: 57px;
+    width: 100%;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    display: flex;
+    position: relative;
+}
+
+.post-header-img {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.post-header-img1 {
+    height: 100%;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+.post-header-img2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.post-header-img2 img {
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    top: -3px;
+    position: absolute;
+    left: -4px;
+    overflow: hidden;
+}
+
+.post-header-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-left: 53px;
+}
+
+.post-header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.post-image {
+    border-bottom: 1px solid rgb(192, 192, 192);
+    width: 100%;
+}
+
+.post-comment {
+    /* border: 1px solid rgb(192, 192, 192); */
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.post-image img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.post-react {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    border-top: 1px solid;
+    align-items: center;
+}
+
+.post-comment-icon {
+    margin-top: 7px;
+    display: flex;
+}
+
+.save {
+    justify-content: flex-end;
+}
+
+.comment-content {
+    display: flex;
+}
+
+.comment-content .comment-content-detail {
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+
+.comment-content .comment-content-detail a {
+    margin-right: 5px;
+}
+
+.comment-content {
+    display: flex;
+}
+
+.comment-content .icon-insta {
+    height: 22px;
+}
+
+.post-react .post-react-post {
+    width: 40px;
+    text-align: center;
+}
+
+.post-react .post-react-post a {
+    text-decoration: none;
+    color: rgb(0, 149, 246);
+    font-weight: bold;
+}
+
+.post-react .post-react-search {
+    flex: 1;
+}
+
+.post-react .post-react-search input {
+    width: 100%;
+    border: unset;
+    outline: none;
+    height: 40px;
+    padding-left: 3px;
+}

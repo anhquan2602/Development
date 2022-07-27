@@ -1,0 +1,55 @@
+.popup-hover-large {
+    height: 738px;
+    width: 1037px;
+    border-radius: 5px;
+    z-index: 9999;
+    background: rgb(255 204 204);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: absolute;
+    top: 1%;
+    left: 16%;
+    display: flex;
+}
+
+.popup-right-comment-detail .post-comment-icon {
+    margin-top: 7px;
+    display: flex;
+}
+
+.popup-right .popup-right-header {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.pic-one {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -5px 13px;
+}
+
+.pic-one .pic-one-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.pic-name {
+    font-size: 13px;
+    flex: 1;
+}
+
+.pic-icon {
+    margin-right: 10px;
+}
+
+.popup-right {
+    width: 100%;
+    height: 100%;
+}

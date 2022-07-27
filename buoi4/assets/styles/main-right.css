@@ -1,0 +1,158 @@
+.account-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.account-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.account-name {
+    flex: 1;
+}
+
+.account-name1 {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account-name2 {
+    font-size: 17px;
+    color: rgb(195, 195, 195);
+}
+
+.account {
+    display: flex;
+}
+
+.account-change {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.account-change a {
+    text-decoration: none;
+    font-size: 13px;
+    justify-content: center;
+    color: #0095F6;
+}
+
+.suggetion-header {
+    display: flex;
+    margin-top: 10px;
+}
+
+.suggetion-header1 {
+    flex: 1;
+    font-size: 15px;
+    color: gray;
+}
+
+.suggetion-header2 {
+    font-size: 13px;
+    text-decoration: none;
+    color: #010609;
+}
+
+.suggetion-change {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.suggetion-change a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #0095F6;
+}
+
+.suggetion-main {
+    margin-top: 5px;
+    display: flex;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.suggetion-avatar {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.suggetion-avatar:hover .popup-hover {
+    display: block !important;
+}
+
+.suggetion-avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.suggetion-name {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggetion-name a {
+    font-size: 14px;
+}
+
+.suggetion-name2 {
+    font-size: 12px;
+}
+
+.wrap-image {
+    width: 30px;
+    height: 30px;
+}
+
+.wrap-image {
+    width: 30px;
+    height: 30px;
+}
+
+.suggetion>div:nth-child(2) {
+    margin-top: 5px !important;
+}
+
+.footer-a {
+    margin-top: 20px;
+    width: 85%;
+}
+
+.footer-a a {
+    word-spacing: 2px;
+    text-decoration: none;
+    font-size: 13px;
+    color: darkgrey;
+}
+
+.dark {
+    color: darkgrey;
+}
+
+.footer-b {
+    margin-top: 20px;
+    word-spacing: 2px;
+    text-decoration: none;
+    font-size: 13px;
+    color: darkgrey;
+}
