@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-person{
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.main-person-header {
+    display: flex;
+    width: 100%;
+    border-bottom: none;
+}
+
+
+.person-header-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-header-text {
+    flex: 2;
+}
+
+.person-header-image img {
+    width: 160px;
+    height: 160px;
+}
+
+.toggle-change ul {
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+.toggle-change ul li {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.toggle-change ul li.active {
+    border-top: 1px solid black;
+}

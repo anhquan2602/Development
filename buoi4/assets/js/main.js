@@ -10,11 +10,43 @@ document.addEventListener("DOMContentLoaded", function() {
     if (linkNames && linkNames.length) {
         linkNames.forEach(ele => {
             ele.onmouseover = function(e) {
+                if (Array.from(e.target.classList).includes("post-header-name")) {
+                    const nameInsta = e.target.getAttribute("data-name");
+                    const poupProfile = document.querySelector(".popup-hover-profile");
+                    const existPopup = e.target.querySelector(".popup-hover-profile");
+                    const clone = poupProfile.cloneNode(true);
+                    let dataPost = e.target.getAttribute("data-post");
+                    if (dataPost != null) {
+                    } else {
+                        dataPost = 0;
+                    }
+                  
+                    clone.style.display = "block";
+                    const postHeaderName = e.target;
+                    const nameElement = clone.querySelector(".name-user-popup");
+                    const postCount = clone.querySelector(".posst-count");
 
+                    if (nameElement) {
+                        nameElement.innerHTML = nameInsta;
+                    }
+                    if (postCount) {
+                        postCount.innerHTML = `${dataPost} bài viết`;
+                    }
+
+                    if (postHeaderName && existPopup == null) {
+                        postHeaderName.append(clone);
+                    }
+                }
             }
 
             ele.onmouseleave = function(e) {
-
+                const postHeaderName = e.target;
+                if (postHeaderName && Array.from(e.target.classList).includes("post-header-name")) {
+                    const existPopup = e.target.querySelector(".popup-hover-profile");
+                    if (existPopup) {
+                        existPopup.remove();
+                    }
+                }
             }
         })
     }
